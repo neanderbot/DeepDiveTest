@@ -10,6 +10,6 @@ import { Thing } from '../models/thing';
 export class ThingComponent {
 
   @Input()
-  thing!: Thing;
+  thing: Thing;
   
 }
