@@ -1,4 +1,6 @@
 import { Component, signal } from '@angular/core';
+import { Thing } from './models/thing';
+import { STUFF } from '../data/db-data';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,7 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('DeepDive');
+
+    stuff: Thing[] = STUFF;
+
 }
